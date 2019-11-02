@@ -1,0 +1,14 @@
+(module 96Boards_CE_outline_std_brick_middle (layer F.Cu) (tedit 5D6640EF)
+  (descr "module 1 pin (ou trou mecanique de percage)")
+  (tags "96Boards, formfactor, mezzanine")
+  (fp_text reference REF** (at 2.5 1) (layer B.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text value "96Boards CE Outline Brick Middle" (at 42.5 1.5) (layer B.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (fp_line (start 85 -54) (end 85 0) (layer B.Fab) (width 0.15))
+  (fp_line (start 0 0) (end 0 -54) (layer B.Fab) (width 0.15))
+  (fp_line (start 0 -54) (end 85 -54) (layer B.Fab) (width 0.15))
+  (fp_line (start 85 0) (end 0 0) (layer B.Fab) (width 0.15))
+)
