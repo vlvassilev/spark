@@ -1,3 +1,10 @@
+spark (1) buster; urgency=medium
+
+  * Reordered differential pairs mapping so that all 6 interfaces can be used with Ultra96
+  * Removed Spartan FPGA and added 96boards mezzanine interface connectors for optional add-on card to handle the low speed SFP+ interface
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 12 Jun 2020 13:01:28 +0200
+
 spark (0) buster; urgency=medium
 
   * Initial release
