@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:spark-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v. 1"
-Date "2020-04-29"
+Title "Lightside Instruments - Spark v.2"
+Date "2020-07-15"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -4293,4 +4292,242 @@ Wire Wire Line
 Connection ~ 10050 10950
 Text GLabel 6300 10200 0    60   Input ~ 0
 SYS_DCIN
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F0FFC29
+P 11200 10700
+F 0 "SW1" H 11200 10985 50  0000 C CNN
+F 1 "SW_Push" H 11200 10894 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS" H 11200 10900 50  0001 C CNN
+F 3 "" H 11200 10900 50  0001 C CNN
+F 4 "PTS645VK582LFS" H 11200 10700 50  0001 C CNN "Mfr Part #"
+	1    11200 10700
+	1    0    0    -1  
+$EndComp
+Text GLabel 11400 10700 2    60   Output ~ 0
+PWR_BTN_N
+$Comp
+L power:GND #PWR0176
+U 1 1 5F10242A
+P 11000 10700
+F 0 "#PWR0176" H 11000 10450 50  0001 C CNN
+F 1 "GND" H 11005 10527 50  0000 C CNN
+F 2 "" H 11000 10700 50  0001 C CNN
+F 3 "" H 11000 10700 50  0001 C CNN
+	1    11000 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x06 SW2
+U 1 1 5F109067
+P 13500 11000
+F 0 "SW2" H 13500 11567 50  0000 C CNN
+F 1 "SW_DIP_x06" H 13500 11476 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx06_Slide_Omron_A6H-6101_W6.15mm_P1.27mm" H 13500 11000 50  0001 C CNN
+F 3 "" H 13500 11000 50  0001 C CNN
+F 4 "A6H-6101" H 13500 11000 50  0001 C CNN "Mfr Part #"
+	1    13500 11000
+	1    0    0    -1  
+$EndComp
+Text GLabel 13200 11200 0    60   UnSpc ~ 0
+SFP0_TX_DISABLE
+Text GLabel 13200 11100 0    60   UnSpc ~ 0
+SFP1_TX_DISABLE
+Text GLabel 13200 11000 0    60   UnSpc ~ 0
+SFP2_TX_DISABLE
+Text GLabel 13200 10900 0    60   UnSpc ~ 0
+SFP3_TX_DISABLE
+Text GLabel 13200 10800 0    60   UnSpc ~ 0
+SFP4_TX_DISABLE
+Text GLabel 13200 10700 0    60   UnSpc ~ 0
+SFP5_TX_DISABLE
+Text GLabel 13800 11200 2    60   UnSpc ~ 0
+SFP0_MOD_ABS
+Text GLabel 13800 11100 2    60   UnSpc ~ 0
+SFP1_MOD_ABS
+Text GLabel 13800 11000 2    60   UnSpc ~ 0
+SFP2_MOD_ABS
+Text GLabel 13800 10900 2    60   UnSpc ~ 0
+SFP3_MOD_ABS
+Text GLabel 13800 10800 2    60   UnSpc ~ 0
+SFP4_MOD_ABS
+Text GLabel 13800 10700 2    60   UnSpc ~ 0
+SFP5_MOD_ABS
+$Comp
+L spark:CONN_02X30 P6
+U 1 1 5FDEE871
+P 12050 2300
+F 0 "P6" H 12050 3850 50  0000 C CNN
+F 1 "CONN_02X30" V 12050 2250 50  0000 C CNN
+F 2 "spark:5177983-2" H 12050 1800 50  0001 C CNN
+F 3 "" H 12050 1800 50  0001 C CNN
+F 4 "TE CONNECTIVITY" H 12050 2300 50  0001 C CNN "Mfr"
+F 5 "5177983-2" H 12050 2300 50  0001 C CNN "Mfr Part #"
+	1    12050 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 11500 850  0    60   BiDi ~ 0
+SD_DAT0/SPI1_DOUT
+Text GLabel 11500 950  0    60   BiDi ~ 0
+SD_DAT1
+Text GLabel 11500 1050 0    60   BiDi ~ 0
+SD_DAT2
+Text GLabel 11500 1150 0    60   BiDi ~ 0
+SD_DAT3/SPI1_CS
+Text GLabel 11500 1250 0    60   BiDi ~ 0
+SD_SCLK/SPI1_SCLK
+Text GLabel 11500 1350 0    60   BiDi ~ 0
+SD_CMD/SPI1_DIN
+Text GLabel 11500 1550 0    60   BiDi ~ 0
+CLK0/CSI0_MCLK
+Text GLabel 11500 1650 0    60   BiDi ~ 0
+CLK1/CSI1_MCLK
+Text GLabel 11500 3350 0    60   BiDi ~ 0
+USB_D+
+Text GLabel 11500 3450 0    60   BiDi ~ 0
+USB_D-
+Text GLabel 11500 3650 0    60   BiDi ~ 0
+HSIC_STR
+Text GLabel 11500 3750 0    60   BiDi ~ 0
+HSIC_DATA
+Text GLabel 12600 2350 2    60   BiDi ~ 0
+I2C2_SCL
+Text GLabel 12600 2450 2    60   BiDi ~ 0
+I2C2_SDA
+Text GLabel 12600 2550 2    60   BiDi ~ 0
+I2C3_SCL
+Text GLabel 12600 2650 2    60   BiDi ~ 0
+I2C3_SDA
+NoConn ~ 12300 3750
+Wire Wire Line
+	12400 1050 12400 1350
+Wire Wire Line
+	12400 3650 12300 3650
+Wire Wire Line
+	12400 3350 12300 3350
+Wire Wire Line
+	12400 3050 12300 3050
+Connection ~ 12400 3350
+Wire Wire Line
+	12400 2750 12300 2750
+Connection ~ 12400 3050
+Wire Wire Line
+	12400 2250 12300 2250
+Connection ~ 12400 2750
+Wire Wire Line
+	12400 1950 12300 1950
+Connection ~ 12400 2250
+Wire Wire Line
+	12400 1650 12300 1650
+Connection ~ 12400 1950
+Wire Wire Line
+	12400 1350 12300 1350
+Connection ~ 12400 1650
+Wire Wire Line
+	12400 1050 12300 1050
+Connection ~ 12400 1350
+Wire Wire Line
+	11700 1450 11700 1750
+Wire Wire Line
+	11700 3550 11800 3550
+Wire Wire Line
+	11700 3250 11800 3250
+Wire Wire Line
+	11700 2950 11800 2950
+Connection ~ 11700 3250
+Wire Wire Line
+	11700 2650 11800 2650
+Connection ~ 11700 2950
+Wire Wire Line
+	11700 2350 11800 2350
+Connection ~ 11700 2650
+Wire Wire Line
+	11700 2050 11800 2050
+Connection ~ 11700 2350
+Wire Wire Line
+	11700 1750 11800 1750
+Connection ~ 11700 2050
+Wire Wire Line
+	11700 1450 11800 1450
+Connection ~ 11700 1750
+Wire Wire Line
+	11500 850  11800 850 
+Wire Wire Line
+	11800 950  11500 950 
+Wire Wire Line
+	11500 1050 11800 1050
+Wire Wire Line
+	11800 1150 11500 1150
+Wire Wire Line
+	11500 1250 11800 1250
+Wire Wire Line
+	11800 1350 11500 1350
+Wire Wire Line
+	11500 1550 11800 1550
+Wire Wire Line
+	11500 1650 11800 1650
+Wire Wire Line
+	11500 3350 11800 3350
+Wire Wire Line
+	11800 3450 11500 3450
+Wire Wire Line
+	11500 3650 11800 3650
+Wire Wire Line
+	11800 3750 11500 3750
+Wire Wire Line
+	12300 2650 12600 2650
+Wire Wire Line
+	12300 2550 12600 2550
+Wire Wire Line
+	12300 2450 12600 2450
+Wire Wire Line
+	12600 2350 12300 2350
+Wire Wire Line
+	12400 3350 12400 3650
+Wire Wire Line
+	12400 3050 12400 3350
+Wire Wire Line
+	12400 2750 12400 3050
+Wire Wire Line
+	12400 2250 12400 2750
+Wire Wire Line
+	12400 1950 12400 2250
+Wire Wire Line
+	12400 1650 12400 1950
+Wire Wire Line
+	12400 1350 12400 1650
+Wire Wire Line
+	11700 3250 11700 3550
+Wire Wire Line
+	11700 2950 11700 3250
+Wire Wire Line
+	11700 2650 11700 2950
+Wire Wire Line
+	11700 2350 11700 2650
+Wire Wire Line
+	11700 2050 11700 2350
+Wire Wire Line
+	11700 1750 11700 2050
+Text Notes 11425 675  0    60   ~ 0
+Extension side - High speed
+$Comp
+L power:GND #PWR0177
+U 1 1 5FDEE907
+P 12400 3850
+F 0 "#PWR0177" H 12400 3600 50  0001 C CNN
+F 1 "GND" H 12400 3700 50  0000 C CNN
+F 2 "" H 12400 3850 60  0000 C CNN
+F 3 "" H 12400 3850 60  0000 C CNN
+	1    12400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12400 3650 12400 3850
+Connection ~ 12400 3650
+Wire Wire Line
+	12400 3850 11700 3850
+Wire Wire Line
+	11700 3850 11700 3550
+Connection ~ 12400 3850
+Connection ~ 11700 3550
 $EndSCHEMATC

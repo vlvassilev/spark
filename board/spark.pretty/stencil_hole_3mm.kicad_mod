@@ -1,0 +1,10 @@
+(module stencil_hole_3mm (layer F.Cu) (tedit 55C6917D)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value stencil_hole_3mm (at 0 -0.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 np_thru_hole circle (at 0 0) (size 3 3) (drill 3) (layers *.Cu *.Mask))
+    (solder_mask_margin 1) (clearance 1))
+)

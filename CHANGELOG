@@ -1,3 +1,13 @@
+spark (2) buster; urgency=medium
+
+  * Added power on push button to the front of the board
+  * Added highspeed connector to secondary mezzanine expansion
+  * Added jumpers connecting SFPx- TX_DISABLE to MOD_ABS when extension board is not present
+  * Added eurocicuits stencil system mounting holes
+  * Fixed bug in position of the Raspberry Pi 2x20 connectors
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Thu, 16 Jul 2020 12:08:24 +0200
+
 spark (1) buster; urgency=medium
 
   * Reordered differential pairs mapping so that all 6 interfaces can be used with Ultra96

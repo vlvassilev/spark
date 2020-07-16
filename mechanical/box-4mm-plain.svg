@@ -2085,4 +2085,15 @@
      id="rect874-3"
      d="m 112.88177,74.4 h 84.86046 c 1.14665,0 2.06977,0.55365 2.06977,1.24138 v 9.51724 c 0,0.68772 -0.92312,1.24138 -2.06977,1.24138 h -84.86046 c -1.14665,0 -2.06977,-0.55366 -2.06977,-1.24138 v -9.51724 c 0,-0.68773 0.92312,-1.24138 2.06977,-1.24138 z"
      style="opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4.04917812;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:fill markers stroke" />
+  <g
+     id="g1248"
+     transform="translate(-2.9287849,-13.549997)"
+     style="fill:#ffffff;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:3.55905318;stroke-dasharray:none;stroke-opacity:1">
+    <circle
+       r="2"
+       cy="93.949997"
+       cx="209.75378"
+       id="path1245"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linejoin:miter;stroke-miterlimit:3.55905318;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:fill markers stroke" />
+  </g>
 </svg>
