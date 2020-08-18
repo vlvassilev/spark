@@ -4,7 +4,7 @@ EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v.2"
+Title "Lightside Instruments - Spark v.2, rev.2"
 Date "2020-07-15"
 Rev "1"
 Comp ""
@@ -65,7 +65,7 @@ U 1 1 55D44709
 P 1900 2050
 F 0 "P1" H 1900 3100 50  0000 C CNN
 F 1 "CONN_02X20" V 1900 2050 50  0000 C CNN
-F 2 "96boards:Pin_Header_SMD_2x20_Pitch2mm" H 1900 1100 60  0001 C CNN
+F 2 "spark:Pin_Header_SMD_2x20_Pitch2mm" H 1900 1100 60  0001 C CNN
 F 3 "" H 1900 1100 60  0000 C CNN
 F 4 "Molex" H 1900 2050 60  0001 C CNN "Mfr"
 F 5 "87759-4051" H 1900 2050 60  0001 C CNN "Mfr Part #"
@@ -166,7 +166,7 @@ U 1 1 598D5B9D
 P 8700 2300
 F 0 "P3" H 8700 3850 50  0000 C CNN
 F 1 "CONN_02X30" V 8700 2250 50  0000 C CNN
-F 2 "96boards:61083-063400LF" H 8700 1800 50  0001 C CNN
+F 2 "spark:61083-063400LF" H 8700 1800 50  0001 C CNN
 F 3 "http://portal.fciconnect.com/Comergent/fci/drawing/61083.pdf" H 8700 1800 50  0001 C CNN
 F 4 "Amphenol ICC (FCI)" H 8700 2300 50  0001 C CNN "Mfr"
 F 5 "61083-064400LF" H 8700 2300 50  0001 C CNN "Mfr Part #"
@@ -1168,7 +1168,7 @@ U 1 1 5EA0956B
 P 4100 2000
 F 0 "P2" H 4150 3117 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 4150 3026 50  0000 C CNN
-F 2 "96boards:Socket_Strip_SMD_2x20_Pitch2mm" H 4100 2000 50  0001 C CNN
+F 2 "spark:Socket_Strip_SMD_2x20_Pitch2mm" H 4100 2000 50  0001 C CNN
 F 3 "~" H 4100 2000 50  0001 C CNN
 	1    4100 2000
 	1    0    0    -1  
@@ -4091,8 +4091,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 10350 3700 10300
 Wire Wire Line
-	3700 10300 4300 10300
-Wire Wire Line
 	4900 10300 4900 10350
 Wire Wire Line
 	3700 10450 3700 10400
@@ -4102,8 +4100,6 @@ Wire Wire Line
 	4900 10400 4900 10450
 Wire Wire Line
 	3700 10550 3700 10500
-Wire Wire Line
-	3700 10500 4300 10500
 Wire Wire Line
 	4900 10500 4900 10550
 Wire Wire Line
@@ -4121,8 +4117,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 10850 3700 10800
 Wire Wire Line
-	3700 10800 4900 10800
-Wire Wire Line
 	4900 10800 4900 10850
 Wire Wire Line
 	3700 10950 3700 10900
@@ -4139,8 +4133,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 11150 3700 11100
 Wire Wire Line
-	3700 11100 4900 11100
-Wire Wire Line
 	4900 11100 4900 11150
 Wire Wire Line
 	3700 11250 3700 11200
@@ -4150,8 +4142,6 @@ Wire Wire Line
 	4900 11200 4900 11250
 Wire Wire Line
 	3700 11350 3700 11300
-Wire Wire Line
-	3700 11300 4300 11300
 Wire Wire Line
 	4900 11300 4900 11350
 Wire Wire Line
@@ -4201,31 +4191,19 @@ Wire Wire Line
 Wire Wire Line
 	4200 10250 4400 10250
 Wire Wire Line
-	4200 10350 4400 10350
-Wire Wire Line
 	4200 10450 4400 10450
 Wire Wire Line
-	4200 10550 4400 10550
-Wire Wire Line
 	4200 10650 4400 10650
-Wire Wire Line
-	4200 10750 4300 10750
 Wire Wire Line
 	4200 10850 4400 10850
 Wire Wire Line
 	4200 10950 4400 10950
 Wire Wire Line
-	4200 11050 4300 11050
-Wire Wire Line
 	4200 11150 4400 11150
 Wire Wire Line
 	4200 11250 4400 11250
 Wire Wire Line
-	4200 11350 4400 11350
-Wire Wire Line
 	4200 11450 4400 11450
-Wire Wire Line
-	4200 11550 4300 11550
 Wire Wire Line
 	4200 11650 4400 11650
 Wire Wire Line
@@ -4236,36 +4214,6 @@ Wire Wire Line
 	4200 11950 4400 11950
 Wire Wire Line
 	4200 12050 4400 12050
-Wire Wire Line
-	4300 10300 4300 10500
-Connection ~ 4300 10300
-Wire Wire Line
-	4300 10300 4900 10300
-Connection ~ 4300 10500
-Wire Wire Line
-	4300 10500 4900 10500
-Wire Wire Line
-	4300 10500 4300 10750
-Connection ~ 4300 10750
-Wire Wire Line
-	4300 10750 4400 10750
-Wire Wire Line
-	4300 10750 4300 11050
-Connection ~ 4300 11050
-Wire Wire Line
-	4300 11050 4400 11050
-Wire Wire Line
-	4300 11050 4300 11300
-Connection ~ 4300 11300
-Wire Wire Line
-	4300 11300 4900 11300
-Wire Wire Line
-	4300 11300 4300 11550
-Connection ~ 4300 11550
-Wire Wire Line
-	4300 11550 4400 11550
-Wire Wire Line
-	4300 11550 4300 11750
 Connection ~ 4300 11750
 Wire Wire Line
 	4300 11750 4400 11750
@@ -4530,4 +4478,56 @@ Wire Wire Line
 	11700 3850 11700 3550
 Connection ~ 12400 3850
 Connection ~ 11700 3550
+Wire Wire Line
+	4200 11550 4300 11550
+Wire Wire Line
+	4300 11550 4400 11550
+Connection ~ 4300 11550
+Wire Wire Line
+	4300 11550 4300 11750
+Connection ~ 4300 11300
+Wire Wire Line
+	4200 11350 4400 11350
+Connection ~ 4300 10350
+Connection ~ 4300 10500
+Wire Wire Line
+	4200 10550 4400 10550
+Wire Wire Line
+	4200 10350 4300 10350
+Wire Wire Line
+	4200 10750 4300 10750
+Wire Wire Line
+	4300 10750 4400 10750
+Connection ~ 4300 11050
+Connection ~ 4300 10750
+Wire Wire Line
+	4300 11050 4400 11050
+Wire Wire Line
+	4200 11050 4300 11050
+Wire Wire Line
+	4300 11300 4900 11300
+Wire Wire Line
+	3700 11300 4300 11300
+Wire Wire Line
+	3700 11100 4900 11100
+Wire Wire Line
+	3700 10800 4900 10800
+Wire Wire Line
+	4300 11300 4300 11550
+Wire Wire Line
+	4300 11050 4300 11300
+Wire Wire Line
+	4300 10750 4300 11050
+Wire Wire Line
+	4300 10500 4300 10750
+Wire Wire Line
+	3700 10500 4300 10500
+Wire Wire Line
+	4300 10500 4900 10500
+Wire Wire Line
+	4300 10500 4300 10350
+Wire Wire Line
+	4300 10350 4400 10350
+Wire Wire Line
+	3700 10300 4900 10300
 $EndSCHEMATC

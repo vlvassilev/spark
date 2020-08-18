@@ -19,7 +19,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2087,7 +2087,7 @@
      style="opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4.04917812;stroke-dasharray:none;stroke-dashoffset:5;stroke-opacity:1;paint-order:fill markers stroke" />
   <g
      id="g1248"
-     transform="translate(-2.9287849,-13.549997)"
+     transform="translate(-0.67878494,-13.549997)"
      style="fill:#ffffff;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:3.55905318;stroke-dasharray:none;stroke-opacity:1">
     <circle
        r="2"

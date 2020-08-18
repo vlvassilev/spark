@@ -1,3 +1,12 @@
+spark (2-2) buster; urgency=medium
+
+  * Doubled 3.3V extension board trace to reduce resistance.
+  * Fixed bug connecting pin 5 to GND instead of 6.
+  * Fixed bug high speed connetor for extension mezzanine boards off with 1 mm.
+  * Box: Fixed bug reset button hole placed 2.25 mm off horizontaly.
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Tue, 18 Aug 2020 02:34:27 +0200
+
 spark (2) buster; urgency=medium
 
   * Added power on push button to the front of the board
