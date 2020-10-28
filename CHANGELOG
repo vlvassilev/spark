@@ -1,3 +1,14 @@
+spark (2-3) UNRELEASED; urgency=medium
+
+  * PCB: Restored the mounting holes for 96boards extensions removed in rev. 2
+  * PCB: DC in zone made wider to compensate for the mounting hole.
+  * Box: Added top plate with only 4 mount holes and more ventilation holes.
+  * Box: Added modular backplate with 3 symetrical plates and 4 mm gap between each.
+  * Box: Increased microSD opening with 4 mm up.
+  * Box: Centered ventilation holes on the back plate.
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 28 Oct 2020 01:10:38 +0100
+
 spark (2-2) buster; urgency=medium
 
   * Doubled 3.3V extension board trace to reduce resistance.

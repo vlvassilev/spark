@@ -4,8 +4,8 @@ EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v.2, rev.2"
-Date "2020-07-15"
+Title "Lightside Instruments - Spark v.2, rev.3"
+Date "2020-10-28"
 Rev "1"
 Comp ""
 Comment1 ""
