@@ -25,9 +25,8 @@
   (pad 54 smd rect (at 9.2 -2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
   (pad 51 smd rect (at 8.4 2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
   (pad 52 smd rect (at 8.4 -2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
-
-  (pad 50 smd rect (at 7.6 2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
-  (pad 49 smd rect (at 7.6 -2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
+  (pad 49 smd rect (at 7.6 2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
+  (pad 50 smd rect (at 7.6 -2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
   (pad 47 smd rect (at 6.8 2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
   (pad 48 smd rect (at 6.8 -2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))
   (pad 45 smd rect (at 6 2.2) (size 0.5 2) (layers F.Cu F.Paste F.Mask))

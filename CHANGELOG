@@ -1,3 +1,9 @@
+spark (2-5) stable; urgency=medium
+
+  * Connected the 20x2 2.54 mm connectors to 3.3V and GND power planes according to the Raspberry Pinout
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 07 Feb 2021 15:52:28 +0100
+
 spark (2-4) stable; urgency=medium
 
   * PCB: Fixed bug in R-PDSS-B11 footprint pad size diameter from 1.08 mm to 2.16 mm
