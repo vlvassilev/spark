@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:spark-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v.2, rev.4"
-Date "2021-01-27"
+Title "Lightside Instruments - Spark v.2, rev.6"
+Date "2021-02-19"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -4558,4 +4559,28 @@ Connection ~ 3700 10100
 Wire Wire Line
 	3600 10900 3700 10900
 Connection ~ 3700 10900
+$Comp
+L Switch:SW_DIP_x01 SW3
+U 1 1 602964C3
+P 6100 11550
+F 0 "SW3" V 6146 11420 50  0000 R CNN
+F 1 "SW_DIP_x01" V 6055 11420 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6100 11550 50  0001 C CNN
+F 3 "~" H 6100 11550 50  0001 C CNN
+	1    6100 11550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0178
+U 1 1 60303EE3
+P 6100 11850
+F 0 "#PWR0178" H 6100 11600 50  0001 C CNN
+F 1 "GND" H 6105 11677 50  0000 C CNN
+F 2 "" H 6100 11850 50  0001 C CNN
+F 3 "" H 6100 11850 50  0001 C CNN
+	1    6100 11850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 11250 6350 11250
 $EndSCHEMATC

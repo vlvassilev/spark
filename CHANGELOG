@@ -1,3 +1,10 @@
+spark (2-6) stable; urgency=medium
+
+  * Added jumper to inhibit 3.3V power supply
+  * PCB: Fixed potential SYS_DCIN track issue. Reduced resistance
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 19 Feb 2021 16:17:07 +0100
+
 spark (2-5) stable; urgency=medium
 
   * Connected the 20x2 2.54 mm connectors to 3.3V and GND power planes according to the Raspberry Pinout
