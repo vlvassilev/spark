@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:spark-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v.2, rev.6"
-Date "2021-02-19"
+Title "Lightside Instruments - Spark v.2, rev.7"
+Date "2021-02-20"
 Rev "1"
 Comp ""
 Comment1 ""
@@ -4583,4 +4582,222 @@ F 3 "" H 6100 11850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 11250 6350 11250
+$Comp
+L spark:LTM4624IYPBF U1
+U 1 1 60447344
+P 6400 13100
+F 0 "U1" H 7200 13365 50  0000 C CNN
+F 1 "LTM4624IYPBF" H 7200 13274 50  0000 C CNN
+F 2 "spark:Analog_Devices_Inc-BGA-0-05-08-1905_Rev_C-0" H 6400 13500 50  0001 L CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/4624fd.pdf" H 6400 13600 50  0001 L CNN
+F 4 "IC" H 6400 13700 50  0001 L CNN "category"
+F 5 "Integrated Circuits (ICs)" H 6400 13800 50  0001 L CNN "device class L1"
+F 6 "Power Management ICs" H 6400 13900 50  0001 L CNN "device class L2"
+F 7 "Voltage Regulators - Switching" H 6400 14000 50  0001 L CNN "device class L3"
+F 8 "DC DC CONVERTER 0.6-5.5V 4A" H 6400 14100 50  0001 L CNN "digikey description"
+F 9 "LTM4624IY#PBF-ND" H 6400 14200 50  0001 L CNN "digikey part number"
+F 10 "http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-bga/05081905_C_bga25.pdf" H 6400 14300 50  0001 L CNN "footprint url"
+F 11 "5.21mm" H 6400 14400 50  0001 L CNN "height"
+F 12 "yes" H 6400 14500 50  0001 L CNN "lead free"
+F 13 "a5a56b0bb6bb4efc" H 6400 14600 50  0001 L CNN "library id"
+F 14 "Analog Devices Inc" H 6400 14700 50  0001 L CNN "manufacturer"
+F 15 "+125°C" H 6400 14800 50  0001 L CNN "max junction temp"
+F 16 "14V" H 6400 14900 50  0001 L CNN "max supply voltage"
+F 17 "4V" H 6400 15000 50  0001 L CNN "min supply voltage"
+F 18 "584-LTM4624IY#PBF" H 6400 15100 50  0001 L CNN "mouser part number"
+F 19 "0.62A" H 6400 15200 50  0001 L CNN "nominal supply current"
+F 20 "1" H 6400 15300 50  0001 L CNN "number of outputs"
+F 21 "4A" H 6400 15400 50  0001 L CNN "output current"
+F 22 "0.6-5.5V" H 6400 15500 50  0001 L CNN "output voltage"
+F 23 "BGA25" H 6400 15600 50  0001 L CNN "package"
+F 24 "yes" H 6400 15700 50  0001 L CNN "rohs"
+F 25 "0.5mm" H 6400 15800 50  0001 L CNN "standoff height"
+F 26 "1MHz" H 6400 15900 50  0001 L CNN "switching frequency"
+F 27 "Buck" H 6400 16000 50  0001 L CNN "switching topology"
+F 28 "+125°C" H 6400 16100 50  0001 L CNN "temperature range high"
+F 29 "-40°C" H 6400 16200 50  0001 L CNN "temperature range low"
+	1    6400 13100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 13100 6400 13100
+Wire Wire Line
+	6400 13100 6400 13200
+Wire Wire Line
+	6400 13300 6500 13300
+Wire Wire Line
+	6500 13200 6400 13200
+Connection ~ 6400 13200
+Wire Wire Line
+	6400 13200 6400 13300
+Text GLabel 6350 13200 0    60   Input ~ 0
+SYS_DCIN
+Wire Wire Line
+	6400 13200 6350 13200
+$Comp
+L power:GND #PWR0179
+U 1 1 60606070
+P 8000 15300
+F 0 "#PWR0179" H 8000 15050 50  0001 C CNN
+F 1 "GND" H 8005 15127 50  0000 C CNN
+F 2 "" H 8000 15300 50  0001 C CNN
+F 3 "" H 8000 15300 50  0001 C CNN
+	1    8000 15300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 15300 8000 15200
+Wire Wire Line
+	8000 15200 7900 15200
+Wire Wire Line
+	7900 14700 7900 14800
+Connection ~ 7900 15200
+Connection ~ 7900 14800
+Wire Wire Line
+	7900 14800 7900 14900
+Connection ~ 7900 14900
+Wire Wire Line
+	7900 14900 7900 15000
+Connection ~ 7900 15000
+Wire Wire Line
+	7900 15000 7900 15100
+Connection ~ 7900 15100
+Wire Wire Line
+	7900 15100 7900 15200
+$Comp
+L power:+3.3V #PWR0182
+U 1 1 606E78C6
+P 8000 13150
+F 0 "#PWR0182" H 8000 13000 50  0001 C CNN
+F 1 "+3.3V" H 8015 13323 50  0000 C CNN
+F 2 "" H 8000 13150 50  0001 C CNN
+F 3 "" H 8000 13150 50  0001 C CNN
+	1    8000 13150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 13600 7900 13500
+Connection ~ 7900 13300
+Wire Wire Line
+	7900 13300 7900 13200
+Connection ~ 7900 13400
+Wire Wire Line
+	7900 13400 7900 13300
+Connection ~ 7900 13500
+Wire Wire Line
+	7900 13500 7900 13400
+Wire Wire Line
+	8000 13150 8000 13200
+Wire Wire Line
+	8000 13200 7900 13200
+Connection ~ 7900 13200
+Wire Wire Line
+	6200 14300 6500 14300
+Wire Wire Line
+	6200 13300 6400 13300
+Connection ~ 6400 13300
+$Comp
+L Device:R R1
+U 1 1 6100CF67
+P 5950 13700
+F 0 "R1" V 5743 13700 50  0000 C CNN
+F 1 "13K3" V 5834 13700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 5880 13700 50  0001 C CNN
+F 3 "~" H 5950 13700 50  0001 C CNN
+	1    5950 13700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 13700 6100 13700
+$Comp
+L power:GND #PWR0183
+U 1 1 610835C3
+P 5750 13750
+F 0 "#PWR0183" H 5750 13500 50  0001 C CNN
+F 1 "GND" H 5755 13577 50  0000 C CNN
+F 2 "" H 5750 13750 50  0001 C CNN
+F 3 "" H 5750 13750 50  0001 C CNN
+	1    5750 13750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 13750 5750 13700
+Wire Wire Line
+	5750 13700 5800 13700
+Wire Wire Line
+	7900 14400 8200 14400
+Wire Wire Line
+	8200 14400 8200 15700
+Wire Wire Line
+	8200 15700 6350 15700
+Wire Wire Line
+	6350 15700 6350 14100
+Wire Wire Line
+	6350 14100 6500 14100
+$Comp
+L Device:C C1
+U 1 1 611ED4F3
+P 6450 14850
+F 0 "C1" H 6565 14896 50  0000 L CNN
+F 1 "C" H 6565 14805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6488 14700 50  0001 C CNN
+F 3 "~" H 6450 14850 50  0001 C CNN
+	1    6450 14850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0184
+U 1 1 611ED6BD
+P 6450 15000
+F 0 "#PWR0184" H 6450 14750 50  0001 C CNN
+F 1 "GND" H 6455 14827 50  0000 C CNN
+F 2 "" H 6450 15000 50  0001 C CNN
+F 3 "" H 6450 15000 50  0001 C CNN
+	1    6450 15000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 14700 6500 14700
+Text Notes 6500 12700 0    60   ~ 0
+Alternative 3.3V power supply option.
+$Comp
+L Switch:SW_DIP_x01 SW4
+U 1 1 6126F98F
+P 6200 13900
+F 0 "SW4" V 6100 14200 50  0000 R CNN
+F 1 "SW_DIP_x01" V 6000 14400 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6200 13900 50  0001 C CNN
+F 3 "~" H 6200 13900 50  0001 C CNN
+	1    6200 13900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0185
+U 1 1 6126F996
+P 6200 14900
+F 0 "#PWR0185" H 6200 14650 50  0001 C CNN
+F 1 "GND" H 6205 14727 50  0000 C CNN
+F 2 "" H 6200 14900 50  0001 C CNN
+F 3 "" H 6200 14900 50  0001 C CNN
+	1    6200 14900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 607CDF30
+P 6200 14450
+F 0 "R2" H 6050 14500 50  0000 L CNN
+F 1 "10K" H 6000 14400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 6130 14450 50  0001 C CNN
+F 3 "~" H 6200 14450 50  0001 C CNN
+	1    6200 14450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 14300 6200 14200
+Wire Wire Line
+	6200 13600 6200 13300
+Connection ~ 6200 14300
+Wire Wire Line
+	6200 14600 6200 14900
 $EndSCHEMATC

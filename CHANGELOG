@@ -1,3 +1,9 @@
+spark (2-7) stable; urgency=medium
+
+  * Added alternative 3.3V/4A regulator LTM4624.
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sat, 20 Feb 2021 14:54:59 +0100
+
 spark (2-6) stable; urgency=medium
 
   * Added jumper to inhibit 3.3V power supply
