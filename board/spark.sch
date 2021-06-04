@@ -1,12 +1,13 @@
 EESchema Schematic File Version 4
+LIBS:spark-cache
 EELAYER 26 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - Spark v.2, rev.7"
-Date "2021-02-20"
-Rev "1"
+Title "Lightside Instruments - Spark v.2"
+Date "2021-06-04"
+Rev "8"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -4060,7 +4061,7 @@ U 1 1 5EA0BDE5
 P 4700 11050
 F 0 "P5" H 4750 12167 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 4750 12076 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 4700 11050 50  0001 C CNN
+F 2 "spark:PinHeader_2x20_P2.54mm_Vertical_SMD_Alignment_Pin" H 4700 11050 50  0001 C CNN
 F 3 "~" H 4700 11050 50  0001 C CNN
 	1    4700 11050
 	-1   0    0    -1  
@@ -4071,7 +4072,7 @@ U 1 1 600D4656
 P 3900 11050
 F 0 "P4" H 3950 12167 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 3950 12076 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical_SMD" H 3900 11050 50  0001 C CNN
+F 2 "spark:PinHeader_2x20_P2.54mm_Vertical_SMD_Alignment_Pin" H 3900 11050 50  0001 C CNN
 F 3 "~" H 3900 11050 50  0001 C CNN
 	1    3900 11050
 	1    0    0    -1  

@@ -1,3 +1,9 @@
+spark (2-8) stable; urgency=medium
+
+  * Added alignment holes to P4 and P5 RPi pin compliant connectors
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 04 Jun 2021 11:10:19 +0200
+
 spark (2-7) stable; urgency=medium
 
   * Added alternative 3.3V/4A regulator LTM4624.
