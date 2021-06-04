@@ -1,3 +1,9 @@
+spark (2-9) stable; urgency=medium
+
+  * Added i2c 1.8V to 3.3V level shifter and connected the corresponding 96b and RPi pins
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 04 Jun 2021 16:27:47 +0200
+
 spark (2-8) stable; urgency=medium
 
   * Added alignment holes to P4 and P5 RPi pin compliant connectors
