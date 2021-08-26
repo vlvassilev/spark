@@ -1,5 +1,7 @@
-Spark is a universal open hardware platform for networking
-developed by Lightside Instruments AS.
+Spark-PDU is a hardware platform for managed power
+distribution based on the Spark hardware platform
+for networking. Both are developed by
+Lightside Instruments AS.
 
 The project includes schematic and PCB
 design files for KiCAD and technical documentation for

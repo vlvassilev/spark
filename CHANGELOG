@@ -1,3 +1,9 @@
+spark-pdu (1-1) stable; urgency=medium
+
+  * Added initial power distribution unit device based on the original spart(2.9) networking platform
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 09 Aug 2021 06:00:22 +0200
+
 spark (2-9) stable; urgency=medium
 
   * Added i2c 1.8V to 3.3V level shifter and connected the corresponding 96b and RPi pins
