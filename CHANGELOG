@@ -1,3 +1,11 @@
+spark-pdu-pi (1-1) stable; urgency=medium
+
+  * Modified for Raspberry Pi 2.54 connector instead of 96boards
+  * Added 12->5 Volt switching regulator block
+  * Fixed bug in fuse holder mounting holes diameter 0.7 > 1.7 mm
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 22 Nov 2021 13:53:11 +0100
+
 spark-pdu (1-1) stable; urgency=medium
 
   * Added initial power distribution unit device based on the original spart(2.9) networking platform
