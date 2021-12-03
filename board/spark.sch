@@ -6,8 +6,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Lightside Instruments - spark-pdu-pi v.1"
-Date "2021-11-20"
-Rev "1"
+Date "2021-12-03"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -112,7 +112,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 2300 4550 50  0001 C C
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q101
+L spark:BS870-Transistor_FET Q101
 U 1 1 610B3890
 P 2600 5050
 F 0 "Q101" H 2805 5096 50  0000 L CNN
@@ -199,7 +199,7 @@ U 1 1 6120354F
 P 6550 1500
 F 0 "J1" H 6630 1542 50  0000 L CNN
 F 1 "Conn_01x01" H 6630 1451 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 6550 1500 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-red" H 6550 1500 50  0001 C CNN
 F 3 "~" H 6550 1500 50  0001 C CNN
 	1    6550 1500
 	-1   0    0    -1  
@@ -210,7 +210,7 @@ U 1 1 61203556
 P 6550 1750
 F 0 "J2" H 6630 1792 50  0000 L CNN
 F 1 "Conn_01x01" H 6630 1701 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 6550 1750 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 6550 1750 50  0001 C CNN
 F 3 "~" H 6550 1750 50  0001 C CNN
 	1    6550 1750
 	-1   0    0    -1  
@@ -345,7 +345,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 5250 4550 50  0001 C C
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q201
+L spark:BS870-Transistor_FET Q201
 U 1 1 610F9EB1
 P 5550 5050
 F 0 "Q201" H 5755 5096 50  0000 L CNN
@@ -516,7 +516,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 8200 4550 50  0001 C C
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q301
+L spark:BS870-Transistor_FET Q301
 U 1 1 611139BC
 P 8500 5050
 F 0 "Q301" H 8705 5096 50  0000 L CNN
@@ -687,7 +687,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 11150 4550 50  0001 C 
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q401
+L spark:BS870-Transistor_FET Q401
 U 1 1 61113A23
 P 11450 5050
 F 0 "Q401" H 11655 5096 50  0000 L CNN
@@ -858,7 +858,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 14100 4550 50  0001 C 
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q501
+L spark:BS870-Transistor_FET Q501
 U 1 1 61119D63
 P 14400 5050
 F 0 "Q501" H 14605 5096 50  0000 L CNN
@@ -1029,7 +1029,7 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 17050 4550 50  0001 C 
 	-1   0    0    1   
 $EndComp
 $Comp
-L spark-rescue:BS870-Transistor_FET Q601
+L spark:BS870-Transistor_FET Q601
 U 1 1 61119DCA
 P 17350 5050
 F 0 "Q601" H 17555 5096 50  0000 L CNN
@@ -1161,7 +1161,7 @@ U 1 1 5EA0BDE5
 P 1500 7550
 F 0 "P5" H 1550 8667 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 1550 8576 50  0000 C CNN
-F 2 "spark:PinSocket_2x20_P2.54mm_Vertical_1_04mm" H 1500 7550 50  0001 C CNN
+F 2 "spark:PinHeader_2x20_P2.54mm_Vertical_1_04mm" H 1500 7550 50  0001 C CNN
 F 3 "~" H 1500 7550 50  0001 C CNN
 	1    1500 7550
 	-1   0    0    -1  

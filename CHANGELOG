@@ -1,3 +1,11 @@
+spark-pdu-pi (1-2) buster; urgency=medium
+
+  * Fixed bug in fuse holder mounting holes diameter 0.7 > 1.7 mm
+  * Avoided SYS_DCIN and +5V bottlenecks around mountingholes by adding filled zones
+  * Fixed 3D rendering
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 03 Dec 2021 03:12:02 +0100
+
 spark-pdu-pi (1-1) stable; urgency=medium
 
   * Modified for Raspberry Pi 2.54 connector instead of 96boards
