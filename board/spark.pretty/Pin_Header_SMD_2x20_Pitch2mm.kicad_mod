@@ -1,4 +1,4 @@
-(module spark:Pin_Header_SMD_2x20_Pitch2mm locked (layer F.Cu) (tedit 598D2D18)
+(module Pin_Header_SMD_2x20_Pitch2mm locked (layer F.Cu) (tedit 61A4CE9B)
   (descr "Double row SMD 2mm pin header, 2x20 contacts")
   (attr smd)
   (fp_text reference P1 (at -1 -2) (layer F.SilkS)
@@ -53,9 +53,9 @@
   (pad 35 smd rect (at 1.25 34 270) (size 0.89 3) (layers F.Cu F.Paste F.Mask))
   (pad 37 smd rect (at 1.25 36 270) (size 0.89 3) (layers F.Cu F.Paste F.Mask))
   (pad 39 smd rect (at 1.25 38 270) (size 0.89 3) (layers F.Cu F.Paste F.Mask))
-  (model Pin_Headers.3dshapes/Pin_Header_Straight_2x20.wrl
-    (offset (xyz -1.000759984970093 -19.02459971427918 0.4003039939880371))
-    (scale (xyz 0.787 0.787 0.5))
-    (rotate (xyz 0 0 90))
+  (model ${KISYS3DMOD}/Connector_PinHeader_2.00mm.3dshapes/PinHeader_2x20_P2.00mm_Vertical_SMD.wrl
+    (offset (xyz -1.0008 -19.0246 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
   )
 )
