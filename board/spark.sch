@@ -6,8 +6,8 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "Lightside Instruments - spark-pdu-pi v.1"
-Date "2021-12-03"
-Rev "2"
+Date "2021-12-20"
+Rev "4"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -223,12 +223,12 @@ $EndComp
 $Comp
 L power:+12V #PWR0106
 U 1 1 61206F25
-P 6750 1500
-F 0 "#PWR0106" H 6750 1350 50  0001 C CNN
-F 1 "+12V" H 6765 1673 50  0000 C CNN
-F 2 "" H 6750 1500 50  0001 C CNN
-F 3 "" H 6750 1500 50  0001 C CNN
-	1    6750 1500
+P 7250 1500
+F 0 "#PWR0106" H 7250 1350 50  0001 C CNN
+F 1 "+12V" H 7265 1673 50  0000 C CNN
+F 2 "" H 7250 1500 50  0001 C CNN
+F 3 "" H 7250 1500 50  0001 C CNN
+	1    7250 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -259,9 +259,9 @@ $EndComp
 Text GLabel 7350 1500 2    60   Input ~ 0
 SYS_DCIN
 Wire Wire Line
-	7350 1500 7200 1500
+	7350 1500 7250 1500
 Wire Wire Line
-	6900 1500 6750 1500
+	6900 1500 6800 1500
 $Comp
 L Connector:Barrel_Jack_Switch J103
 U 1 1 610EDA31
@@ -581,8 +581,6 @@ $EndComp
 Connection ~ 8400 4250
 Connection ~ 8400 4850
 Wire Wire Line
-	8400 4250 8000 4250
-Wire Wire Line
 	7900 4850 7750 4850
 $Comp
 L Device:R R302
@@ -749,8 +747,6 @@ F 3 "" H 11350 4250 50  0001 C CNN
 $EndComp
 Connection ~ 11350 4250
 Connection ~ 11350 4850
-Wire Wire Line
-	11350 4250 10950 4250
 Wire Wire Line
 	10850 4850 10700 4850
 $Comp
@@ -919,8 +915,6 @@ $EndComp
 Connection ~ 14300 4250
 Connection ~ 14300 4850
 Wire Wire Line
-	14300 4250 13900 4250
-Wire Wire Line
 	13800 4850 13650 4850
 $Comp
 L Device:R R502
@@ -1087,8 +1081,6 @@ F 3 "" H 17250 4250 50  0001 C CNN
 $EndComp
 Connection ~ 17250 4250
 Connection ~ 17250 4850
-Wire Wire Line
-	17250 4250 16850 4250
 Wire Wire Line
 	16750 4850 16600 4850
 $Comp
@@ -1430,9 +1422,52 @@ Text GLabel 2800 10950 0    60   BiDi ~ 0
 PORT1
 Text GLabel 4700 11050 2    60   BiDi ~ 0
 RESET_BTN
+Connection ~ 7250 1500
 Wire Wire Line
-	5450 4250 5050 4250
+	7250 1500 7200 1500
+Text GLabel 6750 1300 0    60   BiDi ~ 0
+IN
 Wire Wire Line
-	2500 4250 2100 4250
-Connection ~ 6750 1500
+	6750 1300 6800 1300
+Wire Wire Line
+	6800 1300 6800 1500
+Connection ~ 6800 1500
+Wire Wire Line
+	6800 1500 6750 1500
+Text GLabel 2050 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	2050 4150 2100 4150
+Wire Wire Line
+	2100 4150 2100 4250
+Text GLabel 5000 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	5000 4150 5050 4150
+Wire Wire Line
+	5050 4150 5050 4250
+Text GLabel 7950 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	7950 4150 8000 4150
+Wire Wire Line
+	8000 4150 8000 4250
+Text GLabel 10900 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	10900 4150 10950 4150
+Wire Wire Line
+	10950 4150 10950 4250
+Text GLabel 13850 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	13850 4150 13900 4150
+Wire Wire Line
+	13900 4150 13900 4250
+Text GLabel 16800 4150 0    60   BiDi ~ 0
+IN
+Wire Wire Line
+	16800 4150 16850 4150
+Wire Wire Line
+	16850 4150 16850 4250
 $EndSCHEMATC
