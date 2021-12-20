@@ -1,3 +1,10 @@
+spark-pdu-pi (1-3) buster; urgency=medium
+
+  * Modularized the 5V switching regulator
+  * Remapped pins so that ice4pi programming interface pins are available
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 20 Dec 2021 03:17:10 +0100
+
 spark-pdu-pi (1-2) buster; urgency=medium
 
   * Fixed bug in fuse holder mounting holes diameter 0.7 > 1.7 mm

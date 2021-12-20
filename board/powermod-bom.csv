@@ -1,0 +1,12 @@
+Reference,Quantity,Identifier,footprint,Value,Tolerance,Voltage,Current,Power,PN
+U1,1,,Package_DFN_QFN:QFN-24-1EP_4x5mm_P0.5mm_EP2.65x3.65mm,MAX17574,,,,,MAX17574ATG+
+C2;C1,2,,Capacitor_SMD:C_0603_1608Metric,2.2uF,,,,,CL10A225KO8NNNC
+C8,1,,Capacitor_SMD:C_0402_1005Metric,22nF,,,,,GCM155R71H223KA55D
+C6,1,,Capacitor_SMD:C_0805_2012Metric,10uF,,,,,CL21A106KPFNNNG
+L1,1,,Inductor_SMD:L_1210_3225Metric,10uH,,,,,SRR1210-100M
+C3;C4,2,,Capacitor_SMD:C_0805_2012Metric,22uF,,,,,CL21A106KOCLRNC
+R6,1,,Resistor_SMD:R_0402_1005Metric,105K,,,,,0402YD105KAT4A
+R7,1,,Resistor_SMD:R_0402_1005Metric,22.6K,,,,,CR0402-FX-2262GLF
+C5;C9,2,,Capacitor_SMD:C_0402_1005Metric,0.1uF,,,,,885012205037
+R5,1,,Capacitor_SMD:C_0402_1005Metric,4.7K,,,,,C1005X5R0J475M050BC
+J3;J4,2,,Connector_PinHeader_2.00mm:PinHeader_2x06_P2.00mm_Vertical_SMD,Conn_02x06_Odd_Even,,,,,87759-1214
