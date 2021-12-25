@@ -1,3 +1,10 @@
+spark-relay-actuator-pi (1-1) buster; urgency=medium
+
+  * Modified park-pdu-pi-1-4 to have 3 inputs each with single pole double throw (SPDT) capability
+  * Increased creepage distance to > 3 mm on all relay input-output paths
+
+ -- Vladimir Vassilev <vladimir@lmf>  Sun, 26 Dec 2021 00:34:37 +0100
+
 spark-pdu-pi (1-4) buster; urgency=medium
 
   * Fixed design bug. The 12V SYS_DCIN is now sourcing current for driving the relay solenoids

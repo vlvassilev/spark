@@ -5,16 +5,16 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "Lightside Instruments - spark-pdu-pi v.1"
-Date "2021-12-20"
+Title "spark-relay-actuator-pi v.1, rev.1, (Raspberry Pi extension relay actuator 6x outputs)"
+Date "2021-12-26"
 Rev "4"
-Comp ""
+Comp "Lightside Instruments AS"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 8700 1500 2    60   Input ~ 0
+Text GLabel 8800 1500 2    60   Input ~ 0
 SYS_DCIN
 $Comp
 L Connector:Barrel_Jack_Switch J10
@@ -71,7 +71,7 @@ U 1 1 6126A53B
 P 1650 4850
 F 0 "J101" H 1730 4892 50  0000 L CNN
 F 1 "Conn_01x01" H 1730 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 1650 4850 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 1650 4850 50  0001 C CNN
 F 3 "~" H 1650 4850 50  0001 C CNN
 	1    1650 4850
 	-1   0    0    -1  
@@ -82,20 +82,9 @@ U 1 1 6126A623
 P 1650 5100
 F 0 "J102" H 1730 5142 50  0000 L CNN
 F 1 "Conn_01x01" H 1730 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 1650 5100 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 1650 5100 50  0001 C CNN
 F 3 "~" H 1650 5100 50  0001 C CNN
 	1    1650 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 61097965
-P 1850 5100
-F 0 "#PWR0102" H 1850 4850 50  0001 C CNN
-F 1 "GND" H 1855 4927 50  0000 C CNN
-F 2 "" H 1850 5100 50  0001 C CNN
-F 3 "" H 1850 5100 50  0001 C CNN
-	1    1850 5100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -188,48 +177,15 @@ Connection ~ 2500 4850
 Wire Wire Line
 	2000 4850 1850 4850
 $Comp
-L Connector_Generic:Conn_01x01 J1
+L Connector_Generic:Conn_01x01 J103
 U 1 1 6120354F
-P 6550 1500
-F 0 "J1" H 6630 1542 50  0000 L CNN
-F 1 "Conn_01x01" H 6630 1451 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal-red" H 6550 1500 50  0001 C CNN
-F 3 "~" H 6550 1500 50  0001 C CNN
-	1    6550 1500
+P 1850 4150
+F 0 "J103" H 1930 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 1930 4101 50  0000 L CNN
+F 2 "spark:banana-plug-horizontal-black" H 1850 4150 50  0001 C CNN
+F 3 "~" H 1850 4150 50  0001 C CNN
+	1    1850 4150
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J2
-U 1 1 61203556
-P 6550 1750
-F 0 "J2" H 6630 1792 50  0000 L CNN
-F 1 "Conn_01x01" H 6630 1701 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal-black" H 6550 1750 50  0001 C CNN
-F 3 "~" H 6550 1750 50  0001 C CNN
-	1    6550 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 6120355D
-P 6750 1750
-F 0 "#PWR0105" H 6750 1500 50  0001 C CNN
-F 1 "GND" H 6755 1577 50  0000 C CNN
-F 2 "" H 6750 1750 50  0001 C CNN
-F 3 "" H 6750 1750 50  0001 C CNN
-	1    6750 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0106
-U 1 1 61206F25
-P 7250 1500
-F 0 "#PWR0106" H 7250 1350 50  0001 C CNN
-F 1 "+12V" H 7265 1673 50  0000 C CNN
-F 2 "" H 7250 1500 50  0001 C CNN
-F 3 "" H 7250 1500 50  0001 C CNN
-	1    7250 1500
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R102
@@ -246,60 +202,12 @@ Connection ~ 2800 5050
 Wire Wire Line
 	3500 5050 3100 5050
 $Comp
-L Device:Fuse F1
-U 1 1 610D71AE
-P 7050 1500
-F 0 "F1" V 6853 1500 50  0000 C CNN
-F 1 "Fuse" V 6944 1500 50  0000 C CNN
-F 2 "spark:Fuse-Littelfuse-PTF-77P" V 6980 1500 50  0001 C CNN
-F 3 "~" H 7050 1500 50  0001 C CNN
-	1    7050 1500
-	0    1    1    0   
-$EndComp
-Text GLabel 7350 1500 2    60   Input ~ 0
-SYS_DCIN
-Wire Wire Line
-	7350 1500 7250 1500
-Wire Wire Line
-	6900 1500 6800 1500
-$Comp
-L Connector:Barrel_Jack_Switch J103
-U 1 1 610EDA31
-P 1600 5600
-F 0 "J103" H 1655 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 1655 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 1650 5560 50  0001 C CNN
-F 3 "~" H 1650 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 1600 5600 50  0001 C CNN "PN"
-	1    1600 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 610EDA38
-P 1900 5700
-F 0 "#PWR0107" H 1900 5450 50  0001 C CNN
-F 1 "GND" H 1905 5527 50  0000 C CNN
-F 2 "" H 1900 5700 50  0001 C CNN
-F 3 "" H 1900 5700 50  0001 C CNN
-	1    1900 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 5600 1900 5700
-Connection ~ 1900 5700
-Wire Wire Line
-	2000 4850 2000 5500
-Wire Wire Line
-	2000 5500 1900 5500
-Connection ~ 2000 4850
-$Comp
 L Connector_Generic:Conn_01x01 J201
 U 1 1 610F9E96
 P 4600 4850
 F 0 "J201" H 4680 4892 50  0000 L CNN
 F 1 "Conn_01x01" H 4680 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 4600 4850 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 4600 4850 50  0001 C CNN
 F 3 "~" H 4600 4850 50  0001 C CNN
 	1    4600 4850
 	-1   0    0    -1  
@@ -310,20 +218,9 @@ U 1 1 610F9E9D
 P 4600 5100
 F 0 "J202" H 4680 5142 50  0000 L CNN
 F 1 "Conn_01x01" H 4680 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 4600 5100 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 4600 5100 50  0001 C CNN
 F 3 "~" H 4600 5100 50  0001 C CNN
 	1    4600 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0108
-U 1 1 610F9EA4
-P 4800 5100
-F 0 "#PWR0108" H 4800 4850 50  0001 C CNN
-F 1 "GND" H 4805 4927 50  0000 C CNN
-F 2 "" H 4800 5100 50  0001 C CNN
-F 3 "" H 4800 5100 50  0001 C CNN
-	1    4800 5100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -430,43 +327,12 @@ Connection ~ 5750 5050
 Wire Wire Line
 	6450 5050 6050 5050
 $Comp
-L Connector:Barrel_Jack_Switch J203
-U 1 1 610F9EEB
-P 4550 5600
-F 0 "J203" H 4605 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 4605 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 4600 5560 50  0001 C CNN
-F 3 "~" H 4600 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 4550 5600 50  0001 C CNN "PN"
-	1    4550 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0112
-U 1 1 610F9EF2
-P 4850 5700
-F 0 "#PWR0112" H 4850 5450 50  0001 C CNN
-F 1 "GND" H 4855 5527 50  0000 C CNN
-F 2 "" H 4850 5700 50  0001 C CNN
-F 3 "" H 4850 5700 50  0001 C CNN
-	1    4850 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 5600 4850 5700
-Connection ~ 4850 5700
-Wire Wire Line
-	4950 4850 4950 5500
-Wire Wire Line
-	4950 5500 4850 5500
-Connection ~ 4950 4850
-$Comp
 L Connector_Generic:Conn_01x01 J301
 U 1 1 611139A1
 P 7550 4850
 F 0 "J301" H 7630 4892 50  0000 L CNN
 F 1 "Conn_01x01" H 7630 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 7550 4850 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 7550 4850 50  0001 C CNN
 F 3 "~" H 7550 4850 50  0001 C CNN
 	1    7550 4850
 	-1   0    0    -1  
@@ -477,20 +343,9 @@ U 1 1 611139A8
 P 7550 5100
 F 0 "J302" H 7630 5142 50  0000 L CNN
 F 1 "Conn_01x01" H 7630 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 7550 5100 50  0001 C CNN
+F 2 "spark:banana-plug-horizontal-black" H 7550 5100 50  0001 C CNN
 F 3 "~" H 7550 5100 50  0001 C CNN
 	1    7550 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 611139AF
-P 7750 5100
-F 0 "#PWR0113" H 7750 4850 50  0001 C CNN
-F 1 "GND" H 7755 4927 50  0000 C CNN
-F 2 "" H 7750 5100 50  0001 C CNN
-F 3 "" H 7750 5100 50  0001 C CNN
-	1    7750 5100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -596,544 +451,8 @@ $EndComp
 Connection ~ 8700 5050
 Wire Wire Line
 	9400 5050 9000 5050
-$Comp
-L Connector:Barrel_Jack_Switch J303
-U 1 1 611139F6
-P 7500 5600
-F 0 "J303" H 7555 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 7555 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 7550 5560 50  0001 C CNN
-F 3 "~" H 7550 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 7500 5600 50  0001 C CNN "PN"
-	1    7500 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 611139FD
-P 7800 5700
-F 0 "#PWR0117" H 7800 5450 50  0001 C CNN
-F 1 "GND" H 7805 5527 50  0000 C CNN
-F 2 "" H 7800 5700 50  0001 C CNN
-F 3 "" H 7800 5700 50  0001 C CNN
-	1    7800 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 5600 7800 5700
-Connection ~ 7800 5700
-Wire Wire Line
-	7900 4850 7900 5500
-Wire Wire Line
-	7900 5500 7800 5500
-Connection ~ 7900 4850
-$Comp
-L Connector_Generic:Conn_01x01 J401
-U 1 1 61113A08
-P 10500 4850
-F 0 "J401" H 10580 4892 50  0000 L CNN
-F 1 "Conn_01x01" H 10580 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 10500 4850 50  0001 C CNN
-F 3 "~" H 10500 4850 50  0001 C CNN
-	1    10500 4850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J402
-U 1 1 61113A0F
-P 10500 5100
-F 0 "J402" H 10580 5142 50  0000 L CNN
-F 1 "Conn_01x01" H 10580 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 10500 5100 50  0001 C CNN
-F 3 "~" H 10500 5100 50  0001 C CNN
-	1    10500 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 61113A16
-P 10700 5100
-F 0 "#PWR0118" H 10700 4850 50  0001 C CNN
-F 1 "GND" H 10705 4927 50  0000 C CNN
-F 2 "" H 10700 5100 50  0001 C CNN
-F 3 "" H 10700 5100 50  0001 C CNN
-	1    10700 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Relay:G5LE-1 K401
-U 1 1 61113A1C
-P 11150 4550
-F 0 "K401" H 11580 4596 50  0000 L CNN
-F 1 "G5LE-1" H 11580 4505 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 11600 4500 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 11150 4550 50  0001 C CNN
-	1    11150 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L spark:BS870-Transistor_FET Q401
-U 1 1 61113A23
-P 11450 5050
-F 0 "Q401" H 11655 5096 50  0000 L CNN
-F 1 "BS870" H 11655 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 11650 4975 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds11302.pdf" H 11450 5050 50  0001 L CNN
-	1    11450 5050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0119
-U 1 1 61113A2A
-P 11350 5250
-F 0 "#PWR0119" H 11350 5000 50  0001 C CNN
-F 1 "GND" H 11355 5077 50  0000 C CNN
-F 2 "" H 11350 5250 50  0001 C CNN
-F 3 "" H 11350 5250 50  0001 C CNN
-	1    11350 5250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R401
-U 1 1 61113A30
-P 11650 5200
-F 0 "R401" H 11550 5150 50  0000 R CNN
-F 1 "10K" H 11550 5050 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 11580 5200 50  0001 C CNN
-F 3 "~" H 11650 5200 50  0001 C CNN
-	1    11650 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 61113A37
-P 11650 5350
-F 0 "#PWR0120" H 11650 5100 50  0001 C CNN
-F 1 "GND" H 11655 5177 50  0000 C CNN
-F 2 "" H 11650 5350 50  0001 C CNN
-F 3 "" H 11650 5350 50  0001 C CNN
-	1    11650 5350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D401
-U 1 1 61113A3D
-P 11800 4550
-F 0 "D401" V 11754 4470 50  0000 R CNN
-F 1 "D_Schottky" V 11845 4470 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 11800 4550 50  0001 C CNN
-F 3 "~" H 11800 4550 50  0001 C CNN
-	1    11800 4550
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	11350 4250 11800 4250
-Wire Wire Line
-	11800 4250 11800 4400
-Wire Wire Line
-	11800 4700 11800 4850
-Wire Wire Line
-	11800 4850 11350 4850
-$Comp
-L power:+12V #PWR0121
-U 1 1 61113A48
-P 11350 4250
-F 0 "#PWR0121" H 11350 4100 50  0001 C CNN
-F 1 "+12V" H 11365 4423 50  0000 C CNN
-F 2 "" H 11350 4250 50  0001 C CNN
-F 3 "" H 11350 4250 50  0001 C CNN
-	1    11350 4250
-	-1   0    0    -1  
-$EndComp
-Connection ~ 11350 4250
-Connection ~ 11350 4850
-Wire Wire Line
-	10850 4850 10700 4850
-$Comp
-L Device:R R402
-U 1 1 61113A53
-P 11800 5050
-F 0 "R402" V 11593 5050 50  0000 C CNN
-F 1 "1K" V 11684 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 11730 5050 50  0001 C CNN
-F 3 "~" H 11800 5050 50  0001 C CNN
-	1    11800 5050
-	0    1    1    0   
-$EndComp
-Connection ~ 11650 5050
-Wire Wire Line
-	12350 5050 11950 5050
-$Comp
-L Connector:Barrel_Jack_Switch J403
-U 1 1 61113A5D
-P 10450 5600
-F 0 "J403" H 10505 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 10505 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 10500 5560 50  0001 C CNN
-F 3 "~" H 10500 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 10450 5600 50  0001 C CNN "PN"
-	1    10450 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 61113A64
-P 10750 5700
-F 0 "#PWR0128" H 10750 5450 50  0001 C CNN
-F 1 "GND" H 10755 5527 50  0000 C CNN
-F 2 "" H 10750 5700 50  0001 C CNN
-F 3 "" H 10750 5700 50  0001 C CNN
-	1    10750 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 5600 10750 5700
-Connection ~ 10750 5700
-Wire Wire Line
-	10850 4850 10850 5500
-Wire Wire Line
-	10850 5500 10750 5500
-Connection ~ 10850 4850
-$Comp
-L Connector_Generic:Conn_01x01 J501
-U 1 1 61119D48
-P 13450 4850
-F 0 "J501" H 13530 4892 50  0000 L CNN
-F 1 "Conn_01x01" H 13530 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 13450 4850 50  0001 C CNN
-F 3 "~" H 13450 4850 50  0001 C CNN
-	1    13450 4850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J502
-U 1 1 61119D4F
-P 13450 5100
-F 0 "J502" H 13530 5142 50  0000 L CNN
-F 1 "Conn_01x01" H 13530 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 13450 5100 50  0001 C CNN
-F 3 "~" H 13450 5100 50  0001 C CNN
-	1    13450 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 61119D56
-P 13650 5100
-F 0 "#PWR0129" H 13650 4850 50  0001 C CNN
-F 1 "GND" H 13655 4927 50  0000 C CNN
-F 2 "" H 13650 5100 50  0001 C CNN
-F 3 "" H 13650 5100 50  0001 C CNN
-	1    13650 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Relay:G5LE-1 K501
-U 1 1 61119D5C
-P 14100 4550
-F 0 "K501" H 14530 4596 50  0000 L CNN
-F 1 "G5LE-1" H 14530 4505 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 14550 4500 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 14100 4550 50  0001 C CNN
-	1    14100 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L spark:BS870-Transistor_FET Q501
-U 1 1 61119D63
-P 14400 5050
-F 0 "Q501" H 14605 5096 50  0000 L CNN
-F 1 "BS870" H 14605 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 14600 4975 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds11302.pdf" H 14400 5050 50  0001 L CNN
-	1    14400 5050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 61119D6A
-P 14300 5250
-F 0 "#PWR0130" H 14300 5000 50  0001 C CNN
-F 1 "GND" H 14305 5077 50  0000 C CNN
-F 2 "" H 14300 5250 50  0001 C CNN
-F 3 "" H 14300 5250 50  0001 C CNN
-	1    14300 5250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R501
-U 1 1 61119D70
-P 14600 5200
-F 0 "R501" H 14500 5150 50  0000 R CNN
-F 1 "10K" H 14500 5050 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14530 5200 50  0001 C CNN
-F 3 "~" H 14600 5200 50  0001 C CNN
-	1    14600 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0131
-U 1 1 61119D77
-P 14600 5350
-F 0 "#PWR0131" H 14600 5100 50  0001 C CNN
-F 1 "GND" H 14605 5177 50  0000 C CNN
-F 2 "" H 14600 5350 50  0001 C CNN
-F 3 "" H 14600 5350 50  0001 C CNN
-	1    14600 5350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D501
-U 1 1 61119D7D
-P 14750 4550
-F 0 "D501" V 14704 4470 50  0000 R CNN
-F 1 "D_Schottky" V 14795 4470 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 14750 4550 50  0001 C CNN
-F 3 "~" H 14750 4550 50  0001 C CNN
-	1    14750 4550
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	14300 4250 14750 4250
-Wire Wire Line
-	14750 4250 14750 4400
-Wire Wire Line
-	14750 4700 14750 4850
-Wire Wire Line
-	14750 4850 14300 4850
-$Comp
-L power:+12V #PWR0132
-U 1 1 61119D88
-P 14300 4250
-F 0 "#PWR0132" H 14300 4100 50  0001 C CNN
-F 1 "+12V" H 14315 4423 50  0000 C CNN
-F 2 "" H 14300 4250 50  0001 C CNN
-F 3 "" H 14300 4250 50  0001 C CNN
-	1    14300 4250
-	-1   0    0    -1  
-$EndComp
-Connection ~ 14300 4250
-Connection ~ 14300 4850
-Wire Wire Line
-	13800 4850 13650 4850
-$Comp
-L Device:R R502
-U 1 1 61119D93
-P 14750 5050
-F 0 "R502" V 14543 5050 50  0000 C CNN
-F 1 "1K" V 14634 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 14680 5050 50  0001 C CNN
-F 3 "~" H 14750 5050 50  0001 C CNN
-	1    14750 5050
-	0    1    1    0   
-$EndComp
-Connection ~ 14600 5050
-Wire Wire Line
-	15300 5050 14900 5050
-$Comp
-L Connector:Barrel_Jack_Switch J503
-U 1 1 61119D9D
-P 13400 5600
-F 0 "J503" H 13455 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 13455 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 13450 5560 50  0001 C CNN
-F 3 "~" H 13450 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 13400 5600 50  0001 C CNN "PN"
-	1    13400 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0133
-U 1 1 61119DA4
-P 13700 5700
-F 0 "#PWR0133" H 13700 5450 50  0001 C CNN
-F 1 "GND" H 13705 5527 50  0000 C CNN
-F 2 "" H 13700 5700 50  0001 C CNN
-F 3 "" H 13700 5700 50  0001 C CNN
-	1    13700 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13700 5600 13700 5700
-Connection ~ 13700 5700
-Wire Wire Line
-	13800 4850 13800 5500
-Wire Wire Line
-	13800 5500 13700 5500
-Connection ~ 13800 4850
-$Comp
-L Connector_Generic:Conn_01x01 J601
-U 1 1 61119DAF
-P 16400 4850
-F 0 "J601" H 16480 4892 50  0000 L CNN
-F 1 "Conn_01x01" H 16480 4801 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 16400 4850 50  0001 C CNN
-F 3 "~" H 16400 4850 50  0001 C CNN
-	1    16400 4850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J602
-U 1 1 61119DB6
-P 16400 5100
-F 0 "J602" H 16480 5142 50  0000 L CNN
-F 1 "Conn_01x01" H 16480 5051 50  0000 L CNN
-F 2 "spark:banana-plug-horizontal" H 16400 5100 50  0001 C CNN
-F 3 "~" H 16400 5100 50  0001 C CNN
-	1    16400 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0134
-U 1 1 61119DBD
-P 16600 5100
-F 0 "#PWR0134" H 16600 4850 50  0001 C CNN
-F 1 "GND" H 16605 4927 50  0000 C CNN
-F 2 "" H 16600 5100 50  0001 C CNN
-F 3 "" H 16600 5100 50  0001 C CNN
-	1    16600 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Relay:G5LE-1 K601
-U 1 1 61119DC3
-P 17050 4550
-F 0 "K601" H 17480 4596 50  0000 L CNN
-F 1 "G5LE-1" H 17480 4505 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 17500 4500 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 17050 4550 50  0001 C CNN
-	1    17050 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L spark:BS870-Transistor_FET Q601
-U 1 1 61119DCA
-P 17350 5050
-F 0 "Q601" H 17555 5096 50  0000 L CNN
-F 1 "BS870" H 17555 5005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 17550 4975 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/ds11302.pdf" H 17350 5050 50  0001 L CNN
-	1    17350 5050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0135
-U 1 1 61119DD1
-P 17250 5250
-F 0 "#PWR0135" H 17250 5000 50  0001 C CNN
-F 1 "GND" H 17255 5077 50  0000 C CNN
-F 2 "" H 17250 5250 50  0001 C CNN
-F 3 "" H 17250 5250 50  0001 C CNN
-	1    17250 5250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R601
-U 1 1 61119DD7
-P 17550 5200
-F 0 "R601" H 17450 5150 50  0000 R CNN
-F 1 "10K" H 17450 5050 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 17480 5200 50  0001 C CNN
-F 3 "~" H 17550 5200 50  0001 C CNN
-	1    17550 5200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 61119DDE
-P 17550 5350
-F 0 "#PWR0136" H 17550 5100 50  0001 C CNN
-F 1 "GND" H 17555 5177 50  0000 C CNN
-F 2 "" H 17550 5350 50  0001 C CNN
-F 3 "" H 17550 5350 50  0001 C CNN
-	1    17550 5350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:D_Schottky D601
-U 1 1 61119DE4
-P 17700 4550
-F 0 "D601" V 17654 4470 50  0000 R CNN
-F 1 "D_Schottky" V 17745 4470 50  0000 R CNN
-F 2 "Diode_SMD:D_0603_1608Metric" H 17700 4550 50  0001 C CNN
-F 3 "~" H 17700 4550 50  0001 C CNN
-	1    17700 4550
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	17250 4250 17700 4250
-Wire Wire Line
-	17700 4250 17700 4400
-Wire Wire Line
-	17700 4700 17700 4850
-Wire Wire Line
-	17700 4850 17250 4850
-$Comp
-L power:+12V #PWR0137
-U 1 1 61119DEF
-P 17250 4250
-F 0 "#PWR0137" H 17250 4100 50  0001 C CNN
-F 1 "+12V" H 17265 4423 50  0000 C CNN
-F 2 "" H 17250 4250 50  0001 C CNN
-F 3 "" H 17250 4250 50  0001 C CNN
-	1    17250 4250
-	-1   0    0    -1  
-$EndComp
-Connection ~ 17250 4250
-Connection ~ 17250 4850
-Wire Wire Line
-	16750 4850 16600 4850
-$Comp
-L Device:R R602
-U 1 1 61119DFA
-P 17700 5050
-F 0 "R602" V 17493 5050 50  0000 C CNN
-F 1 "1K" V 17584 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 17630 5050 50  0001 C CNN
-F 3 "~" H 17700 5050 50  0001 C CNN
-	1    17700 5050
-	0    1    1    0   
-$EndComp
-Connection ~ 17550 5050
-Wire Wire Line
-	18250 5050 17850 5050
-$Comp
-L Connector:Barrel_Jack_Switch J603
-U 1 1 61119E04
-P 16350 5600
-F 0 "J603" H 16405 5917 50  0000 C CNN
-F 1 "Barrel_Jack" H 16405 5826 50  0000 C CNN
-F 2 "spark:PJ1-021-SMT-TR" H 16400 5560 50  0001 C CNN
-F 3 "~" H 16400 5560 50  0001 C CNN
-F 4 "PJ1-021-SMT-TR" H 16350 5600 50  0001 C CNN "PN"
-	1    16350 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0138
-U 1 1 61119E0B
-P 16650 5700
-F 0 "#PWR0138" H 16650 5450 50  0001 C CNN
-F 1 "GND" H 16655 5527 50  0000 C CNN
-F 2 "" H 16650 5700 50  0001 C CNN
-F 3 "" H 16650 5700 50  0001 C CNN
-	1    16650 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	16650 5600 16650 5700
-Wire Wire Line
-	16750 4850 16750 5500
-Wire Wire Line
-	16750 5500 16650 5500
-Connection ~ 16750 4850
-Connection ~ 16650 5700
-Text GLabel 15300 5050 2    60   BiDi ~ 0
-PORT5
 Text GLabel 9400 5050 2    60   BiDi ~ 0
 PORT3
-Text GLabel 12350 5050 2    60   BiDi ~ 0
-PORT4
 Text GLabel 6450 5050 2    60   BiDi ~ 0
 PORT2
 Text GLabel 3500 5050 2    60   BiDi ~ 0
@@ -1394,9 +713,7 @@ Wire Wire Line
 Connection ~ 4500 11000
 Wire Wire Line
 	4500 11000 4500 11500
-Text GLabel 2800 9650 0    60   BiDi ~ 0
-PORT6
-Text GLabel 18250 5050 2    60   BiDi ~ 0
+Text GLabel 2800 10950 0    60   BiDi ~ 0
 PORT6
 Text GLabel 4750 9950 2    60   BiDi ~ 0
 iCE_CREST
@@ -1410,64 +727,93 @@ Text GLabel 2800 10050 0    60   BiDi ~ 0
 iCE_MOSI
 Text GLabel 2800 10250 0    60   BiDi ~ 0
 iCE_SCK
-Text GLabel 2800 9750 0    60   BiDi ~ 0
-PORT5
-Text GLabel 2800 9850 0    60   BiDi ~ 0
-PORT3
-Text GLabel 4750 9850 2    60   BiDi ~ 0
-PORT4
 Text GLabel 4700 10850 2    60   BiDi ~ 0
+PORT5
+Text GLabel 2800 9650 0    60   BiDi ~ 0
+PORT3
+Text GLabel 2800 9850 0    60   BiDi ~ 0
+PORT4
+Text GLabel 2800 9750 0    60   BiDi ~ 0
 PORT2
-Text GLabel 2800 10950 0    60   BiDi ~ 0
+Text GLabel 4750 9850 2    60   BiDi ~ 0
 PORT1
-Text GLabel 4700 11050 2    60   BiDi ~ 0
+Text GLabel 4700 11050 2    60   Input ~ 0
 RESET_BTN
-Connection ~ 7250 1500
-Wire Wire Line
-	7250 1500 7200 1500
-Text GLabel 6750 1300 0    60   BiDi ~ 0
-IN
-Wire Wire Line
-	6750 1300 6800 1300
-Wire Wire Line
-	6800 1300 6800 1500
-Connection ~ 6800 1500
-Wire Wire Line
-	6800 1500 6750 1500
-Text GLabel 2050 4150 0    60   BiDi ~ 0
-IN
+Text GLabel 2100 3850 0    60   BiDi ~ 0
+IN1
 Wire Wire Line
 	2050 4150 2100 4150
 Wire Wire Line
 	2100 4150 2100 4250
-Text GLabel 5000 4150 0    60   BiDi ~ 0
-IN
+Wire Wire Line
+	1850 5100 2200 5100
+Wire Wire Line
+	2200 5100 2200 4850
+Wire Wire Line
+	4800 5100 5150 5100
+Wire Wire Line
+	5150 5100 5150 4850
+Wire Wire Line
+	2100 4150 2100 3850
+Connection ~ 2100 4150
+$Comp
+L Connector_Generic:Conn_01x01 J203
+U 1 1 62325246
+P 4800 4150
+F 0 "J203" H 4880 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 4880 4101 50  0000 L CNN
+F 2 "spark:banana-plug-horizontal-black" H 4800 4150 50  0001 C CNN
+F 3 "~" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5050 3850 0    60   BiDi ~ 0
+IN2
 Wire Wire Line
 	5000 4150 5050 4150
 Wire Wire Line
 	5050 4150 5050 4250
-Text GLabel 7950 4150 0    60   BiDi ~ 0
-IN
+Wire Wire Line
+	5050 4150 5050 3850
+Connection ~ 5050 4150
+$Comp
+L Connector_Generic:Conn_01x01 J303
+U 1 1 6232DB8B
+P 7750 4150
+F 0 "J303" H 7830 4192 50  0000 L CNN
+F 1 "Conn_01x01" H 7830 4101 50  0000 L CNN
+F 2 "spark:banana-plug-horizontal-black" H 7750 4150 50  0001 C CNN
+F 3 "~" H 7750 4150 50  0001 C CNN
+	1    7750 4150
+	-1   0    0    -1  
+$EndComp
+Text GLabel 8000 3850 0    60   BiDi ~ 0
+IN3
 Wire Wire Line
 	7950 4150 8000 4150
 Wire Wire Line
 	8000 4150 8000 4250
-Text GLabel 10900 4150 0    60   BiDi ~ 0
-IN
 Wire Wire Line
-	10900 4150 10950 4150
+	8000 4150 8000 3850
+Connection ~ 8000 4150
 Wire Wire Line
-	10950 4150 10950 4250
-Text GLabel 13850 4150 0    60   BiDi ~ 0
-IN
+	7750 5100 8100 5100
 Wire Wire Line
-	13850 4150 13900 4150
+	8100 5100 8100 4850
+$Comp
+L power:+12V #PWR0105
+U 1 1 6237CF33
+P 8700 1500
+F 0 "#PWR0105" H 8700 1350 50  0001 C CNN
+F 1 "+12V" H 8715 1673 50  0000 C CNN
+F 2 "" H 8700 1500 50  0001 C CNN
+F 3 "" H 8700 1500 50  0001 C CNN
+	1    8700 1500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	13900 4150 13900 4250
-Text GLabel 16800 4150 0    60   BiDi ~ 0
-IN
-Wire Wire Line
-	16800 4150 16850 4150
-Wire Wire Line
-	16850 4150 16850 4250
+	8800 1500 8700 1500
+Connection ~ 8700 1500
+Text GLabel 4700 10950 2    60   Output ~ 0
+REMOTE
 $EndSCHEMATC
