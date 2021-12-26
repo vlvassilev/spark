@@ -1,3 +1,9 @@
+spark-relay-actuator-pi (1-3) buster; urgency=medium
+
+  * Added LEDs
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 26 Dec 2021 20:32:21 +0100
+
 spark-relay-actuator-pi (1-2) buster; urgency=medium
 
   * Corrected positioning of the banana sockets. Inupts were 2 mm longer outside of the board

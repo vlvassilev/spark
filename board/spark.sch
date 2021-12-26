@@ -5,9 +5,9 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "spark-relay-actuator-pi v.1, rev.1, (Raspberry Pi extension relay actuator 6x outputs)"
+Title "spark-relay-actuator-pi v.1, (Raspberry Pi extension relay actuator 6x outputs)"
 Date "2021-12-26"
-Rev "4"
+Rev "3"
 Comp "Lightside Instruments AS"
 Comment1 ""
 Comment2 ""
@@ -816,4 +816,86 @@ Wire Wire Line
 Connection ~ 8700 1500
 Text GLabel 4700 10950 2    60   Output ~ 0
 REMOTE
+$Comp
+L Device:LED D102
+U 1 1 61C88417
+P 3250 4400
+F 0 "D102" V 3288 4282 50  0000 R CNN
+F 1 "LED" V 3197 4282 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 3250 4400 50  0001 C CNN
+F 3 "~" H 3250 4400 50  0001 C CNN
+	1    3250 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R103
+U 1 1 61C885EB
+P 3250 4700
+F 0 "R103" H 3320 4746 50  0000 L CNN
+F 1 "1K" H 3320 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3180 4700 50  0001 C CNN
+F 3 "~" H 3250 4700 50  0001 C CNN
+	1    3250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4850 3250 4850
+Connection ~ 2950 4850
+Wire Wire Line
+	2950 4250 3250 4250
+Connection ~ 2950 4250
+$Comp
+L Device:LED D202
+U 1 1 61C8D8AD
+P 6200 4400
+F 0 "D202" V 6238 4282 50  0000 R CNN
+F 1 "LED" V 6147 4282 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 6200 4400 50  0001 C CNN
+F 3 "~" H 6200 4400 50  0001 C CNN
+	1    6200 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 61C8D8B4
+P 6200 4700
+F 0 "R203" H 6270 4746 50  0000 L CNN
+F 1 "1K" H 6270 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6130 4700 50  0001 C CNN
+F 3 "~" H 6200 4700 50  0001 C CNN
+	1    6200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4850 6200 4850
+Wire Wire Line
+	5900 4250 6200 4250
+Connection ~ 5900 4250
+Connection ~ 5900 4850
+$Comp
+L Device:LED D302
+U 1 1 61C95B1D
+P 9150 4400
+F 0 "D302" V 9188 4282 50  0000 R CNN
+F 1 "LED" V 9097 4282 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 9150 4400 50  0001 C CNN
+F 3 "~" H 9150 4400 50  0001 C CNN
+	1    9150 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R303
+U 1 1 61C95B24
+P 9150 4700
+F 0 "R303" H 9220 4746 50  0000 L CNN
+F 1 "1K" H 9220 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9080 4700 50  0001 C CNN
+F 3 "~" H 9150 4700 50  0001 C CNN
+	1    9150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 4850 9150 4850
+Wire Wire Line
+	8850 4250 9150 4250
 $EndSCHEMATC
