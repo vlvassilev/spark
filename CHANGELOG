@@ -1,9 +1,17 @@
+spark-relay-actuator-pi (1-2) buster; urgency=medium
+
+  * Corrected positioning of the banana sockets. Inupts were 2 mm longer outside of the board
+  * Added logo
+  * Added missing mounting hole and corrected position of one
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 26 Dec 2021 04:04:46 +0100
+
 spark-relay-actuator-pi (1-1) buster; urgency=medium
 
   * Modified park-pdu-pi-1-4 to have 3 inputs each with single pole double throw (SPDT) capability
   * Increased creepage distance to > 3 mm on all relay input-output paths
 
- -- Vladimir Vassilev <vladimir@lmf>  Sun, 26 Dec 2021 00:34:37 +0100
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 26 Dec 2021 00:34:37 +0100
 
 spark-pdu-pi (1-4) buster; urgency=medium
 
