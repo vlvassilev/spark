@@ -5,9 +5,9 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
-Title "spark-relay-actuator-pi v.1, (Raspberry Pi extension relay actuator 6x outputs)"
-Date "2021-12-26"
-Rev "3"
+Title "spark-relay-actuator-pi v.2, (Raspberry Pi extension relay actuator 3x inputs)"
+Date "2021-12-28"
+Rev "1"
 Comp "Lightside Instruments AS"
 Comment1 ""
 Comment2 ""
@@ -730,13 +730,13 @@ iCE_SCK
 Text GLabel 4700 10850 2    60   BiDi ~ 0
 PORT5
 Text GLabel 2800 9650 0    60   BiDi ~ 0
-PORT3
+PORT1
 Text GLabel 2800 9850 0    60   BiDi ~ 0
 PORT4
 Text GLabel 2800 9750 0    60   BiDi ~ 0
 PORT2
 Text GLabel 4750 9850 2    60   BiDi ~ 0
-PORT1
+PORT3
 Text GLabel 4700 11050 2    60   Input ~ 0
 RESET_BTN
 Text GLabel 2100 3850 0    60   BiDi ~ 0
