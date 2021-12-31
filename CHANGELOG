@@ -1,3 +1,18 @@
+spark (2-11) buster; urgency=medium
+
+  * Added optional +5V powersupply module for Raspberry Pi extension boards
+  * Added 2x 1 mm mark with 3 mm pad fiducials
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Fri, 31 Dec 2021 05:16:59 +0100
+
+spark (2-10) buster; urgency=medium
+
+  * Added alignment pin to P2 the 2 mm 40 pin extenion connector
+  * Avoided SYS_DCIN bottlenecks around mountingholes by adding filled zones
+  * Fixed 3D rendering
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Sun, 05 Dec 2021 01:19:19 +0100
+
 spark (2-9) stable; urgency=medium
 
   * Added i2c 1.8V to 3.3V level shifter and connected the corresponding 96b and RPi pins

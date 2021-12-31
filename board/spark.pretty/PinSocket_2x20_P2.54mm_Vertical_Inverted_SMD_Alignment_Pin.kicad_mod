@@ -1,4 +1,4 @@
-(module spark:PinHeader_2x20_P2.54mm_Vertical_SMD (layer F.Cu) (tedit 60B95B2C)
+(module PinSocket_2x20_P2.54mm_Vertical_Inverted_SMD_Alignment_Pin (layer F.Cu) (tedit 61AE8475)
   (descr "surface-mounted straight pin header, 2x20, 2.54mm pitch, double rows")
   (tags "Surface mounted pin header SMD 2x20 2.54mm double row")
   (attr smd)
@@ -227,9 +227,9 @@
   (pad 38 smd rect (at 2.525 21.59) (size 3.15 1) (layers F.Cu F.Paste F.Mask))
   (pad 39 smd rect (at -2.525 24.13) (size 3.15 1) (layers F.Cu F.Paste F.Mask))
   (pad 40 smd rect (at 2.525 24.13) (size 3.15 1) (layers F.Cu F.Paste F.Mask))
-  (model ${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x20_P2.54mm_Vertical_SMD.wrl
-    (at (xyz 0 0 0))
+  (model ${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/harwin-pinsocket-2x20-p2.54mm-vertical-smd-m20-7812045.step
+    (offset (xyz 0 24.12 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 90))
   )
 )
