@@ -1,3 +1,9 @@
+spark-relay-actuator-pi (2-2) buster; urgency=medium
+
+  * Box: Corrected height of banana jack holes, Raspberry Pi front panel and SD card
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 26 Jan 2022 14:24:42 +0100
+
 spark-relay-actuator-pi (2-1) buster; urgency=medium
 
   * Moved the Pi on the left side of the extension board
